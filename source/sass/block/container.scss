@@ -3,10 +3,20 @@
   margin: 0 auto;
 }
 
+.container__tablet {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 @media (max-width: 1199px) {
   .container {
     padding-left: 64px;
     padding-right: 64px;
+    margin: 0 auto;
+  }
+
+  .container-tablet {
+    padding-left: 21px;
+    padding-right: 21px;
     margin: 0 auto;
   }
 }

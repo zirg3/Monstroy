@@ -46,8 +46,7 @@
 
 .page-header__item a:hover {
   cursor: pointer;
-  color: $green;
-  text-decoration: underline;
+  color: $black;
   transition: all 0.3s ease;
 }
 
@@ -89,8 +88,7 @@
 
 .page-header__Feedback:hover {
   cursor: pointer;
-  border: 2px solid $green;
-  background-color: transparent;
+  box-shadow: 0px 2px 4.75px 0.25px rgba(0, 255, 216, 0.6);
   transition: all 0.3s ease;
 }
 
@@ -204,8 +202,9 @@
   }
 
   .page-header__nav-active {
-    top: 55px;
+    top: 54px;
     width: 100%;
+    z-index: 22;
   }
 
   .page-header__wrap {
