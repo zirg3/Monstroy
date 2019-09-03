@@ -1,6 +1,77 @@
+(function () {
+  let mob = '(max-width: 767px)';
+  let tablet = '(min-width: 768px) and (max-width: 1199px)';
+  let desc = '(min-width: 1200px)';
+  let current = '';
 
+  function initSwiper() {
+    if (window.matchMedia(desc).matches && current !== 'desktop') {
+      current = 'desktop';
 
+      if (swiper) swiper.destroy();
+      var swiper = new Swiper('.swiper-container', {
+        init: false,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: '.partners__button-next',
+          prevEl: '.partners__button-prew',
+        },
+      });
+      swiper.init();
 
+    }
+
+    if (window.matchMedia(tablet).matches && current !== 'tablet') {
+      current = 'tablet';
+
+      if (swiper) swiper.destroy();
+      var swiper = new Swiper('.swiper-container', {
+        init: false,
+        slidesPerView: 3,
+        spaceBetween: 0,
+        centeredSlides: true,
+        effect: 'coverflow',
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+          clickable: true,
+        },
+        coverflowEffect: {
+          rotate: 0,
+          stretch: -10,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+      });
+      swiper.init();
+    }
+
+    if (window.matchMedia(mob).matches && current !== 'mobile') {
+      current = 'mobile';
+
+      if (swiper) swiper.destroy();
+      var swiper = new Swiper('.swiper-container', {
+        init: false,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+          clickable: true,
+        },
+      });
+      swiper.init();
+    }
+
+  }
+
+  initSwiper();
+}());
 
 (function () {
   var isMobile = false;

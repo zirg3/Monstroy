@@ -242,36 +242,6 @@
     align-items: center;
   }
 
-  .swiper-pagination-bullet {
-    display: block;
-    width: 9px;
-    height: 9px;
-    background-color: #dddddd;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: all .3s ease;
-    margin-left: 5px;
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: #00ffd7;
-  }
-
-  .swiper-pagination__cont {
-    position: relative;
-    top: 0;
-    width: 45px;
-    min-height: 8px;
-    margin: 0 auto;
-    display: flex;
-  }
-
-  .swiper-slide-active {
-    z-index: 999;
-    transform: scale(1.14);
-  }
-
   .main-banner__features-item p,
   .main-banner__features-item svg {
     fill: rgba(0, 0, 0, 0.7);
@@ -361,7 +331,6 @@
   }
 
   .main-banner__features-item {
-    display: none;
     min-height: 200px;
     margin-bottom: 13px;
   }

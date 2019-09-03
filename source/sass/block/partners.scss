@@ -1,3 +1,7 @@
+.partners {
+  margin-top: 112px;
+}
+
 .partners__wrap {
   position: relative;
 }
@@ -8,6 +12,7 @@
   font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
+  margin: 0;
   color: $black;
 }
 
@@ -17,18 +22,21 @@
   top: 50%;
   left: 0;
   z-index: 1;
-  width: 85%;
-  height: 2px;
+  width: 87%;
+  height: 1px;
   background-color: #000;
 }
 
 .partners__wrap h2 span {
   background-color: #fff;
-  display: block;
-  width: 300px;
+  min-width: 300px;
   z-index: 222;
   position: relative;
   padding-right: 80px;
+}
+
+.partners__text-hidden {
+  display: none;
 }
 
 .partners__button {
@@ -56,6 +64,11 @@
   transition: all 0.3s ease;
 }
 
+.partners__logo a:hover img {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
 .partners__button-prew svg {
   transform: rotate(180deg);
 }
@@ -73,17 +86,115 @@
 .partners__button::before {
   content: "";
   position: absolute;
-  left: 49%;
+  left: 50%;
   top: 40%;
   width: 2px;
   height: 8px;
   background-color: $black;
 }
 
+.partners__logo-item img {
+  opacity: .5;
+  transition: all 0.3s ease;
+}
+
+.partners__logo {
+  margin-top: 47px;
+}
+
+.partners__logo-item a {
+  display: block;
+  padding: 14px 22px 9px 25px;
+  border: 1px solid #ededed;
+}
 @media (max-width: 1199px) {
+  .partners {
+    margin-top: 76px;
+  }
+
+  .partners__logo-item a {
+    padding: 50px 22px 41px 22px;
+  }
+
+  .partners__text-hidden {
+    display: block;
+  }
+
+  .partners__button {
+    display: none;
+  }
+
+  .partners__wrap h2::after {
+    content: none;
+  }
+
+  .partners__wrap h2 {
+    font-size: 26px;
+  }
+
+  .partners__wrap h2 span {
+    display: flex;
+    padding-right: 0;
+    min-width: 96px;
+    flex-wrap: wrap;
+  }
+
+  .partners__logo-item a {
+    border: none;
+    padding: 58px 22px 26px;
+  }
+
+  .partners__logo-item {
+    box-shadow: 0 10px 17px 8px rgba(0, 0, 0, .1);
+  }
+
+  .partners__logo-list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .partners__logo {
+    margin-top: 7px;
+  }
+
+  .partners__logo-item img {
+    min-width: 232px;
+  }
 
 }
 
 @media (max-width: 767px) {
+  .partners {
+    margin-top: 29px;
+  }
 
+  .partners__logo-item {
+    box-shadow: none;
+  }
+
+  .partners__logo a {
+    width: 99%;
+    border-right: 1px solid #ededed;
+    padding: 0;
+    padding: 11px 0px 8px 0px;
+  }
+
+  .partners__wrap h2 span span{
+    display: none;
+  }
+
+  .partners__wrap h2 {
+    font-size: 20px;
+  }
+
+  .partners__logo {
+    margin-top: 0px;
+  }
+
+  .partners__logo-item img {
+    min-width: 216px;
+  }
 }
+// .partners .swiper-slide-active a{
+//   padding: 20px 12px 18px;
+// }
