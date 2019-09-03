@@ -224,7 +224,7 @@
 
   .services__items a {
     font-size: 12px;
-    padding: 0px 21px;
+    padding: 4px 21px;
     min-height: 41px;
   }
 
@@ -254,12 +254,20 @@
     border-right: none;
     border-top: none;
   }
-  
+
   .services__items a:hover {
     border-left: none;
     border-right: none;
     border-top: none;
     border-color: #e8e8e8;
     box-shadow: none;
+  }
+
+  .services__title h3 {
+    min-height: 46px;
+  }
+  
+  .services__wrap h2 span {
+    width: 300px;
   }
 }

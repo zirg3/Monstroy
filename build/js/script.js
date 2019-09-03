@@ -1,3 +1,7 @@
+
+
+initSwiper();
+
 (function () {
   var isMobile = false;
   $(document).ready(function () {
@@ -7,7 +11,7 @@
     if (isMobile) {
       $(document).ready(function () {
         $('.services__title').click(function () {
-          $('.services__items').removeClass('services__items--active');
+          $('.services__items').not($(this).next()).removeClass('services__items--active');
           $(this).next().toggleClass('services__items--active');
           $('.services__title').removeClass('services__items-active');
           $(this).toggleClass('services__items-active');

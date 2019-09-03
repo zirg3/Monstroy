@@ -1,0 +1,89 @@
+.partners__wrap {
+  position: relative;
+}
+
+.partners__wrap h2 {
+  position: relative;
+  font-family: $raleway;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.partners__wrap h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 85%;
+  height: 2px;
+  background-color: #000;
+}
+
+.partners__wrap h2 span {
+  background-color: #fff;
+  display: block;
+  width: 300px;
+  z-index: 222;
+  position: relative;
+  padding-right: 80px;
+}
+
+.partners__button {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 117px;
+}
+
+.partners__button button {
+  width: 60px;
+  height: 35px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  background-color: $white;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.partners__button button:hover {
+  background-color: #00FFD8;
+  transition: all 0.3s ease;
+}
+
+.partners__button-prew svg {
+  transform: rotate(180deg);
+}
+
+.partners__button-prew {
+  border: 2px solid $black;
+  border-right: none;
+}
+
+.partners__button-next {
+  border: 2px solid $black;
+  border-left: none;
+}
+
+.partners__button::before {
+  content: "";
+  position: absolute;
+  left: 49%;
+  top: 40%;
+  width: 2px;
+  height: 8px;
+  background-color: $black;
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
