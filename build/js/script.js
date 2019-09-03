@@ -1,6 +1,6 @@
 
 
-initSwiper();
+
 
 (function () {
   var isMobile = false;
