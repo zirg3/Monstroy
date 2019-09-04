@@ -8,7 +8,6 @@
     if (window.matchMedia(desc).matches && current !== 'desktop') {
       current = 'desktop';
 
-      if (swiper) swiper.destroy();
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 4,
         spaceBetween: 30,
@@ -26,7 +25,6 @@
     if (window.matchMedia(tablet).matches && current !== 'tablet') {
       current = 'tablet';
 
-      if (swiper) swiper.destroy();
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 0,
@@ -48,12 +46,32 @@
         },
       });
       swiper.init();
+
+      var swiperBanner = new Swiper('.main-banner__swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        centeredSlides: true,
+        init: false,
+        loop: true,
+        effect: 'coverflow',
+        pagination: {
+          el: '.swiper-pagination__banner',
+          clickable: true,
+        },
+        coverflowEffect: {
+          rotate: 0,
+          stretch: -10,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+      });
+      swiperBanner.init();
     }
 
     if (window.matchMedia(mob).matches && current !== 'mobile') {
       current = 'mobile';
 
-      if (swiper) swiper.destroy();
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -66,6 +84,19 @@
         },
       });
       swiper.init();
+
+      var swiperBanner = new Swiper('.main-banner__swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        init: false,
+        pagination: {
+          el: '.swiper-pagination__banner',
+          dynamicBullets: true,
+          clickable: true,
+        },
+      });
+      swiperBanner.init();
     }
 
   }
@@ -94,11 +125,12 @@
 
 (function () {
   const burger = document.querySelector('.page-header__burger');
-  burger.addEventListener('click', function() {
+  burger.addEventListener('click', function () {
     burger.classList.toggle('page-header__burger-active');
   });
   const cont = document.querySelector('.page-header__list');
-  burger.addEventListener('click', function() {
+  burger.addEventListener('click', function () {
     cont.classList.toggle('page-header__nav-active');
   });
 }());
+

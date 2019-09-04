@@ -32,7 +32,7 @@
   min-width: 300px;
   z-index: 222;
   position: relative;
-  padding-right: 80px;
+  padding-right: 132px;
 }
 
 .partners__text-hidden {
@@ -145,7 +145,7 @@
   }
 
   .partners__logo-item {
-    box-shadow: 0 10px 17px 8px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 17px 1px rgba(0, 0, 0, .1);
   }
 
   .partners__logo-list {
@@ -194,7 +194,19 @@
   .partners__logo-item img {
     min-width: 216px;
   }
+
+  .partners__logo .swiper-slide-active {
+    border-top: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+
+  .partners__logo-list {
+    padding-bottom: 12px;
+  }
+
 }
+
 // .partners .swiper-slide-active a{
 //   padding: 20px 12px 18px;
 // }
