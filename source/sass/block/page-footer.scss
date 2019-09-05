@@ -542,7 +542,7 @@
   }
 
   .page-footer__form-fields textarea {
-    margin-top: -5px;
+    margin-top: 0;
   }
 
   .page-footer__feedback form p {
@@ -550,7 +550,8 @@
   }
 
   .page-footer__feedback form button {
-    margin-left: 58px;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .page-footer__logo p {
@@ -679,5 +680,11 @@
     position: absolute;
     top: 4px;
     background-repeat: no-repeat;
+  }
+
+  .page-footer__feedback form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }

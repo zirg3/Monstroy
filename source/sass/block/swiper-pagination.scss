@@ -27,5 +27,8 @@
 }
 
 @media (max-width: 767px) {
-
+  .swiper-pagination__cont {
+    top: 0px;
+    left: -8px;
+  }
 }
