@@ -129,7 +129,7 @@
   margin-top: 14px;
 }
 
-.page-footer__form input {
+.page-footer__feedback form input {
   font-family: $roboto;
   font-weight: 400;
   margin-bottom: 21px;
@@ -142,8 +142,8 @@
   width: 179px;
 }
 
-.page-footer__form input,
-.page-footer__form textarea {
+.page-footer__feedback form input,
+.page-footer__feedback form textarea {
   outline: none;
   border: none;
   border-bottom: 2px solid #CCCCCC;
@@ -170,7 +170,7 @@
   margin-top: 23px;
 }
 
-.page-footer__form p {
+.page-footer__feedback form p {
   font-family: $roboto;
   font-weight: 400;
   font-size: 12px;
@@ -180,7 +180,7 @@
   text-align: center;
 }
 
-.page-footer__form button {
+.page-footer__feedback form button {
   font-family: $raleway;
   font-weight: 900;
   font-size: 25px;
@@ -197,7 +197,7 @@
   transition: all 0.3s ease;
 }
 
-.page-footer__form button:hover {
+.page-footer__feedback form button:hover {
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 1);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -288,14 +288,14 @@
   letter-spacing: 0.03rem;
 }
 
-.page-footer__form p a {
+.page-footer__feedback form p a {
   color: rgba(0, 0, 0, 0.5);
   border-bottom: 1px dotted #999999;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.page-footer__form p a:hover {
+.page-footer__feedback form p a:hover {
   border-bottom: 1px dotted #999999;
   cursor: pointer;
   color: rgba(0, 0, 0, 1);
@@ -337,7 +337,7 @@
     margin-top: -5px;
   }
 
-  .page-footer__form input {
+  .page-footer__feedback form input {
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 25px;
@@ -361,13 +361,13 @@
     width: 153px;
   }
 
-  .page-footer__form p {
+  .page-footer__feedback form p {
     font-size: 10px;
     line-height: 12px;
     padding: 9px 32px 29px 28px;
   }
 
-  .page-footer__form button {
+  .page-footer__feedback form button {
     font-size: 16px;
     line-height: 22px;
     min-width: 165px;
@@ -545,11 +545,11 @@
     margin-top: -5px;
   }
 
-  .page-footer__form p {
+  .page-footer__feedback form p {
     padding: 22px 0px 32px 0px;
   }
 
-  .page-footer__form button {
+  .page-footer__feedback form button {
     margin-left: 58px;
   }
 
