@@ -149,6 +149,10 @@
   border-bottom: 2px solid #CCCCCC;
 }
 
+.page-footer__feedback form textarea {
+  resize: none;
+}
+
 .page-footer__email {
   display: flex;
   flex-direction: column;
