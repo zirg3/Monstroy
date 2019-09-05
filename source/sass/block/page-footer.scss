@@ -581,6 +581,7 @@
     color: rgba(255, 255, 255, .5);
     line-height: 28px;
     padding: 0 0 16px 30px;
+    transition: all 0.3s ease;
   }
 
   .page-footer__span-cont-mobile {
@@ -625,6 +626,12 @@
 
   .page-footer__contacts-wrap-mobile a {
     position: relative;
+  }
+
+  .page-footer__contacts-wrap-mobile a p:hover {
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 
   .page-footer__social--vk svg {
