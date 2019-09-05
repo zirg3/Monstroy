@@ -7,10 +7,6 @@
   flex-wrap: wrap;
 }
 
-.projects__wrap h2 {
-  position: relative;
-}
-
 .projects__wrap h2 span {
   background-color: $white;
   display: block;
@@ -32,6 +28,7 @@
 }
 
 .projects__wrap h2 {
+  position: relative;
   margin: 0;
   font-family: $raleway;
   font-size: 30px;

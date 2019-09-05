@@ -2,7 +2,15 @@
   margin-top: 128px;
 }
 
+.page-footer h2 {
+  display: none;
+}
+
 .page-footer__nav {
+  display: none;
+}
+
+.page-footer__contacts-wrap-mobile {
   display: none;
 }
 
@@ -161,19 +169,15 @@
 .page-footer__short-fields input {
   margin-top: 23px;
 }
+
 .page-footer__form p {
   font-family: $roboto;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
-  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.5);
   padding: 25px 36px 37px 69px;
   text-align: center;
-}
-
-.page-footer__form a {
-  color: #000000;
 }
 
 .page-footer__form button {
@@ -284,6 +288,20 @@
   letter-spacing: 0.03rem;
 }
 
+.page-footer__form p a {
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px dotted #999999;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-footer__form p a:hover {
+  border-bottom: 1px dotted #999999;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 1199px) {
   .page-footer {
     margin-top: 61px;
@@ -367,6 +385,9 @@
     width: 100%;
     display: flex;
     order: 3;
+    margin-top: 56px;
+    border-bottom: 1px solid #1A1A1A;
+    padding-bottom: 21px;
   }
 
   .page-footer__logo a img {
@@ -415,12 +436,6 @@
     margin-top: 0;
     width: 91px;
     margin-left: 56px;
-  }
-
-  .page-footer__logo {
-    margin-top: 56px;
-    border-bottom: 1px solid #1A1A1A;
-    padding-bottom: 21px;
   }
 
   .page-footer__nav-item {
@@ -488,6 +503,7 @@
 
   .page-footer__cont {
     margin-top: 10px;
+    padding: 6px 0 0;
   }
 
   .page-footer__contacts-wrap a {
@@ -503,9 +519,6 @@
   .page-footer__email-link::before {
     top: 4px;
     left: -29px;
-  }
-  .page-footer__cont {
-    padding: 6px 0 0;
   }
 
   .page-footer__short-fields input,
@@ -544,26 +557,44 @@
     display: none;
   }
 
-  .page-footer__logo {
-    flex-direction: column;
-    margin-top: 0px;
-  }
-
-  .page-footer__contacts--mobile {
+  .page-footer__contacts-mobile {
     padding: 0 20px;
   }
 
-  .page-footer__list-mobile {
+  .page-footer__list {
     padding: 0 20px;
     display: flex;
+    margin: 0;
+    margin-top: 27px;
+    width: 219px;
+  }
+  .page-footer__list li {
+    margin-right: 20px;
   }
 
-  .page-footer__contacts-wrap--mobile a p {
+  .page-footer__contacts-wrap-mobile a p {
     display: block;
     font-family: $roboto;
     font-weight: 400;
     font-size: 14px;
     color: rgba(255, 255, 255, .5);
+    line-height: 28px;
+    padding: 0 0 16px 30px;
+  }
+
+  .page-footer__span-cont-mobile {
+    display: block;
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, .5);
+    line-height: 28px;
+    padding: 0 0 0 30px;
+    margin-top: -24px;
+  }
+
+  .page-footer__nav {
+    margin-bottom: 16px;
   }
 
   .page-footer__nav-list {
@@ -582,8 +613,71 @@
     font-family: $roboto;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
     line-height: 23px;
     padding: 15px 0px 11px 0px;
+  }
+
+  .page-footer__contacts-wrap-mobile {
+    padding: 0 0 0 0;
+    display: block;
+  }
+
+  .page-footer__contacts-wrap-mobile a {
+    position: relative;
+  }
+
+  .page-footer__social--vk svg {
+    width: 41px;
+    height: 36px;
+  }
+
+  .page-footer__social--twitter svg {
+    width: 34px;
+    height: 32px;
+  }
+
+  .page-footer__social--fb svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .page-footer__logo {
+    flex-direction: column;
+    margin-top: 0px;
+    border-bottom: none;
+  }
+
+  .page-footer__copy {
+    padding: 0 50px;
+  }
+
+  .page-footer__adress-link-mobile::before {
+    content: '';
+    background-image: url(../img/adress-grey.svg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    background-repeat: no-repeat;
+  }
+
+  .page-footer__email-link-mobile::before {
+    content: '';
+    background-image: url(../img/email-grey.svg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 7px;
+    background-repeat: no-repeat;
+  }
+
+  .page-footer__tel-link-mobile::before {
+    content: '';
+    background-image: url(../img/phone-grey.svg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    background-repeat: no-repeat;
   }
 }

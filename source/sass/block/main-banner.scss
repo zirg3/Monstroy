@@ -91,7 +91,7 @@
 }
 
 .main-banner__contacts-us:hover {
-  box-shadow: 0px 2px 6.3px 0.7px rgba(0, 255, 216, 0.65);
+  box-shadow: 0px 2px 6px 1px rgba(0, 255, 216, 0.6);
 }
 
 .main-banner__features-wrap {
@@ -120,10 +120,6 @@
 .main-banner__features-item:nth-child(3n) {
   margin-right: 0;
   padding: 0;
-}
-
-.main-banner__features-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .main-banner__features-item p {
@@ -201,7 +197,6 @@
     color: $black;
     opacity: 1;
     width: 33.333%;
-    padding: 0;
     margin-right: 0;
     margin-bottom: 9px;
     box-shadow: 0 10px 17px 7px rgba(0, 0, 0, 0.1);
@@ -210,7 +205,7 @@
   }
 
   .main-banner__features-item p {
-      margin-top: 8px;
+    margin-top: 8px;
   }
 
   .main-banner__features-item--like svg {
@@ -343,6 +338,7 @@
     min-height: 155px;
     margin-bottom: 13px;
     padding: 22px 0;
+    box-shadow: none;
   }
 
   .main-banner__features-item:nth-child(3n) {
@@ -358,10 +354,6 @@
 
   .swiper-pagination__cont {
     top: -8px;
-  }
-
-  .main-banner__features-item {
-    box-shadow: none;
   }
 
   .main-banner__features .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {

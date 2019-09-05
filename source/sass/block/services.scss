@@ -180,7 +180,6 @@
   }
 
   .services__items {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -222,12 +221,6 @@
     top: auto;
   }
 
-  .services__items a {
-    font-size: 12px;
-    padding: 4px 21px;
-    min-height: 41px;
-  }
-
   .services__cont {
     margin-right: 0;
     width: 100%;
@@ -250,6 +243,9 @@
   }
 
   .services__items a {
+    font-size: 12px;
+    padding: 4px 21px;
+    min-height: 41px;
     border-left: none;
     border-right: none;
     border-top: none;

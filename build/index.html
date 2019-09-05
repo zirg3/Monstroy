@@ -64,7 +64,7 @@
       </div>
       <div class="page-header__contacts">
         <a class="page-header__tel" href="tel:+74954526723">+7 (495) 452-67-23</a>
-        <a class="page-header__Feedback" href="#">Обратная связь</a>
+        <a class="page-header__Feedback" href="#footer">Обратная связь</a>
       </div>
     </section>
   </header>
@@ -83,8 +83,8 @@
             выполняет полный комплекс строительно-монтажных
             и&nbsp;пуско-наладочных работ по&nbsp;электроснабжению зданий и&nbsp;сооружений.</p>
           <div class="main-banner__contacts">
-            <a class="main-banner__services" href="#">Наши услуги</a>
-            <a class="main-banner__contacts-us" href="#">Связаться с нами</a>
+            <a class="main-banner__services" href="#services-scroll">Наши услуги</a>
+            <a class="main-banner__contacts-us" href="#footer">Связаться с нами</a>
           </div>
         </div>
       </div>
@@ -126,15 +126,15 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services-scroll">
       <div class="services__wrap container container-tablet">
         <h2><span>услуги</span></h2>
         <ul class="services__list">
           <li class="services__cont">
-            <div class="services__title">
+            <div class="services__title services__items-active">
               <h3>Проектирование</h3>
             </div>
-            <div class="services__items">
+            <div class="services__items services__items--active">
               <a href="#">Предварительная разработка концепции<span class="services__items-hidden">;</span></a>
               <a href="#">Установка систем энергоснабжения<span class="services__items-hidden">;</span></a>
               <a href="#">Оформление задания на проектирование<span class="services__items-hidden">;</span></a>
@@ -421,27 +421,27 @@
                 <li class="page-footer__nav-item"><a href="#">Контакты</a></li>
               </ul>
             </nav>
-            <div class="page-footer__contacts--mobile">
-              <div class="page-footer__contacts-wrap--mobile">
-                <a class="page-footer__adress-link-page-footer__email-feedback-mobile" href="#">
+            <div class="page-footer__contacts-mobile">
+              <div class="page-footer__contacts-wrap-mobile">
+                <a class="page-footer__adress-link-mobile" href="#">
                   <p>Варшавское шоссе,
                     д,&nbsp;118,&nbsp;к.1&nbsp;Бизнес-&nbsp;центр
                     «ВАРШАВКА Sky»</p>
                 </a>
               </div>
-              <div class="page-footer__contacts-wrap--mobile">
-                <a class="page-footer__email-link--mobile" type="mali:zao@montstroy.ru" href="#">
+              <div class="page-footer__contacts-wrap-mobile">
+                <a class="page-footer__email-link-mobile" type="mali:zao@montstroy.ru" href="#">
                   <p>zao@montstroy.ru</p>
                 </a>
               </div>
-              <div class="page-footer__contacts-wrap--mobile">
-                <a class="page-footer__tel-link--mobile" type="tel:+74954526723" href="#">
+              <div class="page-footer__contacts-wrap-mobile">
+                <a class="page-footer__tel-link-mobile" type="tel:+74954526723" href="#">
                   <p>+7 (495) 452-67-23</p>
                 </a>
-                <span class="page-footer__span-cont--mobile">Ежедневно с 9:00 до 18:00</span>
+                <span class="page-footer__span-cont-mobile">Ежедневно с 9:00 до 18:00</span>
               </div>
             </div>
-            <ul class="page-footer__list-mobile">
+            <ul class="page-footer__list">
               <li class="page-footer__social page-footer__social--vk"><a href="#">
                 <svg width="44" height="38">
                   <use xlink:href="#vk"></use>
@@ -464,15 +464,15 @@
             <form class="page-footer__form" action="GET">
               <div class="page-footer__form-fields">
                 <div class="page-footer__short-fields">
-                  <label for="name">Имя<input id="name" type="text" required=""></label>
-                  <label for="tel">Телефон<input id="tel" type="tel" required=""></label>
+                  <label for="name">Имя<input name="name" id="name" type="text" required=""></label>
+                  <label for="tel">Телефон<input name="tel" class="page-footer__tel" id="tel" type="tel" required=""></label>
                 </div>
                 <div class="page-footer__email">
                   <label for="email">E-mail</label>
-                  <input id="email" type="email" required="">
+                  <input name="email" id="email" type="email" required="">
                 </div>
                   <label for="message">Сообщение</label>
-                  <textarea name="message" id="" cols="30" rows="1" resize:none;="" required=""></textarea>
+                  <textarea name="message" id="message" cols="30" rows="1" resize:none;="" required=""></textarea>
               </div>
               <p>Заполняя форму на сайте, вы соглашаетесь с нашей
                 <a href="#">Политикой конфиденциальности</a></p>
@@ -500,12 +500,10 @@
             </div>
           </div>
       </div>
-      <div class="page-footer__copy">
-        <p>1992-2018 © ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+      <div class="page-footer__copy" id="footer">
+        <p>1992-2018 © ЗАО “НСП ”МонтСтрой”. Все&nbsp;права защищены</p>
       </div>
     </section>
-
-
 
   </footer>
   <script src="js/lib.js"></script>
