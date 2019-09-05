@@ -55,7 +55,7 @@
         loop: true,
         effect: 'coverflow',
         pagination: {
-          el: '.swiper-pagination__banner',
+          el: '.swiper-pagination-banner',
           clickable: true,
         },
         coverflowEffect: {
@@ -91,7 +91,7 @@
         loop: true,
         init: false,
         pagination: {
-          el: '.swiper-pagination__banner',
+          el: '.swiper-pagination-banner',
           dynamicBullets: true,
           clickable: true,
         },
@@ -133,4 +133,5 @@
     cont.classList.toggle('page-header__nav-active');
   });
 }());
+
 
