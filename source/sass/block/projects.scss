@@ -195,7 +195,7 @@
 
   .projects__img,
   .projects__img img {
-    height: auto;
+    object-fit: cover;
   }
 }
 

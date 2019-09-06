@@ -137,11 +137,12 @@
 
   .partners__logo-item a {
     border: none;
-    padding: 58px 22px 26px;
+    padding: 40px 22px 22px 22px;
   }
 
   .partners__logo-item {
     box-shadow: 0 1px 17px 1px rgba(0, 0, 0, .1);
+    min-height: 204px;
   }
 
   .partners__logo-list {
@@ -166,6 +167,7 @@
 
   .partners__logo-item {
     box-shadow: none;
+    min-height: auto;
   }
 
   .partners__logo a {
